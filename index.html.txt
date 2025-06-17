@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulseras Marc & Julen</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    header p {
+      color: #777;
+      font-size: 1.1em;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .producto {
+      background-color: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 180px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .producto p {
+      margin: 10px 0 0;
+      font-weight: bold;
+    }
+    .info {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    .info strong {
+      display: block;
+      margin-top: 20px;
+    }
+    .whatsapp {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pulseras Marc & Julen</h1>
+    <p>Pulseras artesanales, color y estilo en Santa Pola ✨</p>
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="https://via.placeholder.com/150?text=Gomitas+Multicolor" alt="Pulsera gomitas">
+      <p>Gomitas multicolor – 1€</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/150?text=Cuerda" alt="Pulsera cuerda">
+      <p>Cuerda – 1€</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/150?text=Madera" alt="Pulsera madera">
+      <p>Madera – 1€</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/150?text=Pop+It" alt="Pulsera pop it">
+      <p>Pop it divertida – 1€</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/150?text=Collar+Gomitas" alt="Collar gomitas">
+      <p>Collar gomitas – 1,50€</p>
+    </div>
+  </section>
+
+  <section class="info">
+    <strong>Dónde:</strong>
+    C/ Oscar Esplá, Nº 5, Santa Pola
+
+    <strong>Cuándo abrimos:</strong>
+    <ul>
+      <li>Lunes, martes, miércoles: abiertos</li>
+      <li>Jueves, viernes: cerrados</li>
+      <li>Habitual: casi siempre de 11:00 a 12:00 o de 18:00 o 19:00</li>
+    </ul>
+
+    <a class="whatsapp" href="https://wa.me/34626526924" target="_blank">
+      Escríbenos por WhatsApp para tu pulsera
+    </a>
+
+    <strong>Teléfonos:</strong>
+    Marc: +34 626 526 924 – 3444 046 473<br />
+    Julen: +34 644 046 473
+  </section>
+
+  <footer>
+    ©️ 2025 Pulseras Marc & Julen
+  </footer>
+
+</body>
+</html>
