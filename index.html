@@ -6,131 +6,92 @@
   <title>Pulseras Marc & Julen</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #f7f7f7;
       margin: 0;
       padding: 0;
-      color: #333;
-    }
-    header {
       text-align: center;
-      padding: 40px 20px 10px;
     }
-    header h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
+
+    h1 {
+      margin-top: 30px;
     }
-    header p {
-      color: #777;
-      font-size: 1.1em;
-    }
+
     .productos {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
-      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px;
     }
+
     .producto {
       background-color: white;
-      border-radius: 12px;
-      padding: 15px;
-      width: 180px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .producto img {
-      width: 100%;
-      height: auto;
+      border: 1px solid #ddd;
       border-radius: 8px;
+      padding: 15px;
+      margin: 10px;
+      width: 180px;
     }
-    .producto p {
-      margin: 10px 0 0;
-      font-weight: bold;
-    }
+
     .info {
-      max-width: 600px;
       margin: 30px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      max-width: 600px;
+      text-align: left;
     }
-    .info strong {
-      display: block;
-      margin-top: 20px;
-    }
-    .whatsapp {
-      display: block;
-      width: fit-content;
-      margin: 20px auto;
-      background-color: #25D366;
+
+    .boton {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 10px;
       color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
+      background-color: #25d366;
+      border: none;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
+
+    .instagram {
+      background-color: #e1306c;
+    }
+
     footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #555;
-      padding-bottom: 30px;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
+  <h1>Pulseras Marc & Julen</h1>
+  <p>Pulseras artesanales, color y estilo en Santa Pola ✨</p>
 
-  <header>
-    <h1>Pulseras Marc & Julen</h1>
-    <p>Pulseras artesanales, color y estilo en Santa Pola ✨</p>
-  </header>
+  <div class="productos">
+    <div class="producto"><strong>Gomitas multicolor</strong> – 1 €</div>
+    <div class="producto"><strong>Cuerda</strong> – 1 €</div>
+    <div class="producto"><strong>Avalorios</strong> – 1 €</div>
+    <div class="producto"><strong>Pop it divertida</strong> – 1 €</div>
+    <div class="producto"><strong>Collar gomitas</strong> – 1,50 €</div>
+  </div>
 
-  <section class="productos">
-    <div class="producto">
-      <img src="https://via.placeholder.com/150?text=Gomitas+Multicolor" alt="Pulsera gomitas">
-      <p>Gomitas multicolor – 1€</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/150?text=Cuerda" alt="Pulsera cuerda">
-      <p>Cuerda – 1€</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/150?text=Madera" alt="Pulsera madera">
-      <p>Madera – 1€</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/150?text=Pop+It" alt="Pulsera pop it">
-      <p>Pop it divertida – 1€</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/150?text=Collar+Gomitas" alt="Collar gomitas">
-      <p>Collar gomitas – 1,50€</p>
-    </div>
-  </section>
+  <div class="info">
+    <p><strong>Dónde:</strong><br />
+      C/ Óscar Esplá, Nº 5, Santa Pola</p>
 
-  <section class="info">
-    <strong>Dónde:</strong>
-    C/ Oscar Esplá, Nº 5, Santa Pola
+    <p><strong>Cuándo abrimos:</strong><br />
+      • Lunes, martes, miércoles: abiertos<br />
+      • Jueves, viernes: cerrados<br />
+      • Habitual: casi siempre de 11:00 a 12:00 o de 18:00 a 19:00
+    </p>
 
-    <strong>Cuándo abrimos:</strong>
-    <ul>
-      <li>Lunes, martes, miércoles: abiertos</li>
-      <li>Jueves, viernes: cerrados</li>
-      <li>Habitual: casi siempre de 11:00 a 12:00 o de 18:00 o 19:00</li>
-    </ul>
-
-    <a class="whatsapp" href="https://wa.me/34626526924" target="_blank">
-      Escríbenos por WhatsApp para tu pulsera
-    </a>
-
-    <strong>Teléfonos:</strong>
-    Marc: +34 626 526 924 – 3444 046 473<br />
-    Julen: +34 644 046 473
-  </section>
+    <a class="boton" href="https://wa.me/34626526924" target="_blank">Escríbenos por WhatsApp – Marc</a>
+    <a class="boton" href="https://wa.me/34644046473" target="_blank">Escríbenos por WhatsApp – Julen</a>
+    <br />
+    <a class="boton instagram" href="https://instagram.com/pulseras_marc_julen" target="_blank">Síguenos en Instagram</a>
+  </div>
 
   <footer>
-    ©️ 2025 Pulseras Marc & Julen
+    © 2025 Pulseras Marc & Julen
   </footer>
-
 </body>
 </html>
