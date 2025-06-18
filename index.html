@@ -1,177 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pulseras Marc & Julen</title>
-  <style>
-    <body style="background-color: #cceeff;">
-      font-family: sans-serif;
-      text-align: center;
-      padding: 30px;
-      background: #fff;
-    }
-    h1 {
-      font-size: 2em;
-    }
-    .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin: 25px 0;
-    }
-    .producto {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px 20px;
-      min-width: 180px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 10px 18px;
-      font-size: 15px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      color: white;
-      cursor: pointer;
-    }
-    .whatsapp {
-      background: #25D366;
-    }
-    .instagram {
-      background: #e1306c;
-    }
-    .tiktok {
-      background: black;
-    }
-    .formulario {
-      background: #007BFF;
-    }
-  </style>
-</head>
-<body>
-  <h1>Pulseras Marc & Julen</h1>
-  <p>Pulseras artesanales, color y estilo en Santa Pola ✨</p>
-
-  <div class="productos">
-    <div class="producto
-
-Buena pregunta — y tienes toda la razón en preguntar.
-
-Hasta ahora te había **preparado el código** para que el botón del formulario apareciera con cada producto, pero **todavía no te lo había dado completo para que lo pegues** en tu archivo `index.html`. Estábamos primero preparando el formulario y comprobando que tu web funcionaba bien (que ahora ya sí funciona 👏).
-
----
-
-### ✅ Ahora sí: lo que sigue
-
-Aquí tienes **el código completo actualizado** para que aparezca el botón de "Encargar" debajo de cada producto, apuntando a tu formulario de Google Forms:
-
----
-
-### 📄 CÓDIGO HTML para `index.html`
-
-🔗 Enlace al formulario: [https://forms.gle/XUquFchVEvj5cwwV7](https://forms.gle/XUquFchVEvj5cwwV7)
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pulseras Marc & Julen</title>
   <style>
     body {
-      font-family: sans-serif;
+      background-color: #cceeff; /* Azul clarito */
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 30px;
-      background: #fff;
+      padding: 20px;
+      margin: 0;
     }
+
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin: 25px 0;
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 40px;
     }
+
     .producto {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px 20px;
-      min-width: 180px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      display: inline-block;
+      width: 200px;
+      background-color: white;
     }
+
+    .producto h3 {
+      margin-top: 0;
+    }
+
     .btn {
       display: inline-block;
-      margin: 8px 4px;
-      padding: 10px 16px;
-      font-size: 15px;
-      font-weight: bold;
-      border: none;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .info {
+      margin-top: 40px;
+    }
+
+    .redes {
+      margin-top: 30px;
+    }
+
+    .redes a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
       border-radius: 5px;
       text-decoration: none;
       color: white;
-      cursor: pointer;
+      font-weight: bold;
     }
-    .whatsapp {
-      background: #25D366;
-    }
-    .instagram {
-      background: #e1306c;
-    }
-    .tiktok {
-      background: black;
-    }
-    .formulario {
-      background: #007BFF;
+
+    .wa { background-color: #25D366; }
+    .ig { background-color: #E1306C; }
+    .tt { background-color: #000000; }
+
+    footer {
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <h1>Pulseras Marc & Julen</h1>
-  <p>Pulseras artesanales, color y estilo en Santa Pola ✨</p>
+  <h2>Pulseras artesanales, color y estilo en Santa Pola ✨</h2>
 
-  <div class="productos">
-    <div class="producto">
-      <strong>Pulseras de gomita – 1 €</strong><br>
-      <a class="btn formulario" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
-    </div>
-    <div class="producto">
-      <strong>Pulseras de cuerda – 1 €</strong><br>
-      <a class="btn formulario" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
-    </div>
-    <div class="producto">
-      <strong>Pulseras con avalorios – 1 €</strong><br>
-      <a class="btn formulario" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
-    </div>
-    <div class="producto">
-      <strong>Pulseras de pop it – 1 €</strong><br>
-      <a class="btn formulario" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
-    </div>
-    <div class="producto">
-      <strong>Collar gomitas – 1,50 €</strong><br>
-      <a class="btn formulario" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
-    </div>
+  <!-- Productos -->
+  <div class="producto">
+    <h3>Pulseras de gomita – 1 €</h3>
+    <a class="btn" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
   </div>
 
-  <p><strong>Dónde:</strong><br>
-  C/ Óscar Esplá, Nº 5, Santa Pola</p>
+  <div class="producto">
+    <h3>Pulseras de cuerda – 1 €</h3>
+    <a class="btn" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
+  </div>
 
-  <p><strong>Cuándo abrimos:</strong><br>
-  • Lunes, martes, miércoles: abiertos<br>
-  • Jueves, viernes: cerrados<br>
-  • Habitual: casi siempre de 11:00 a 12:00 o de 18:00 a 19:00</p>
+  <div class="producto">
+    <h3>Pulseras con avalorios – 1 €</h3>
+    <a class="btn" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
+  </div>
 
-  <a class="btn whatsapp" href="https://wa.me/34XXXXXXXXX" target="_blank">Escríbenos por WhatsApp – Marc</a>
-  <a class="btn whatsapp" href="https://wa.me/34XXXXXXXXX" target="_blank">Escríbenos por WhatsApp – Julen</a><br>
-  <a class="btn instagram" href="https://instagram.com/tu_cuenta" target="_blank">Síguenos en Instagram</a>
-  <a class="btn tiktok" href="https://tiktok.com/@tu_cuenta" target="_blank">Síguenos en TikTok</a>
+  <div class="producto">
+    <h3>Pulseras de pop it – 1 €</h3>
+    <a class="btn" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
+  </div>
 
-  <p style="margin-top: 40px;">© 2025 Pulseras Marc & Julen</p>
+  <div class="producto">
+    <h3>Collar gomitas – 1,50 €</h3>
+    <a class="btn" href="https://forms.gle/XUquFchVEvj5cwwV7" target="_blank">Encargar</a>
+  </div>
+
+  <!-- Información -->
+  <div class="info">
+    <p><strong>Dónde:</strong><br>
+    C/ Óscar Esplá, Nº 5, Santa Pola</p>
+
+    <p><strong>Cuándo abrimos:</strong><br>
+    • Lunes, martes, miércoles: abiertos<br>
+    • Jueves, viernes: cerrados<br>
+    • Habitual: casi siempre de 11:00 a 12:00 o de 18:00 a 19:00</p>
+  </div>
+
+  <!-- Botones de contacto -->
+  <div class="redes">
+    <a class="wa" href="https://wa.me/34XXXXXXXXX" target="_blank">Escríbenos por WhatsApp – Marc</a>
+    <a class="wa" href="https://wa.me/34XXXXXXXXX" target="_blank">Escríbenos por WhatsApp – Julen</a><br>
+    <a class="ig" href="https://www.instagram.com/..." target="_blank">Síguenos en Instagram</a>
+    <a class="tt" href="https://www.tiktok.com/..." target="_blank">Síguenos en TikTok</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Pulseras Marc & Julen</p>
+  </footer>
 </body>
 </html>
